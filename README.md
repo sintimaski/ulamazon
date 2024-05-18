@@ -16,6 +16,8 @@
 
 6. Proper auth for tests
 
+7. Proper library setup - formatters, linters, security checkers etc.
+
 
 # Run
 1. pip install -r requirements.txt
@@ -34,4 +36,3 @@
 # Extra
 - black is used for formatting
 - isort is user for imports optimizing
-
