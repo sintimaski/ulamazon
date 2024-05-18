@@ -9,8 +9,12 @@ from .models import Order, Product
 class OrderViewSetTestCase(APITestCase):
     def setUp(self):
         self.user = User.objects.create_user(username="testuser", password="testpass")
-        self.product1 = Product.objects.create(name="Product 1", price=10.0, user=self.user)
-        self.product2 = Product.objects.create(name="Product 2", price=20.0, user=self.user)
+        self.product1 = Product.objects.create(
+            name="Product 1", price=10.0, user=self.user
+        )
+        self.product2 = Product.objects.create(
+            name="Product 2", price=20.0, user=self.user
+        )
 
         self.order1 = Order.objects.create(user=self.user, address="address1")
         self.order2 = Order.objects.create(user=self.user, address="address2")

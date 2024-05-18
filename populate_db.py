@@ -1,13 +1,14 @@
 import os
+
 import django
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'djulam.settings')
 django.setup()
 
 from django.contrib.auth.models import User
+
 from orders.models import Order, OrderItem
 from products.models import Product
-
 
 # Create some users
 user1 = User.objects.create_user(id=2, username='user3', password='password2')
