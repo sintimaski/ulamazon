@@ -1,0 +1,179 @@
+{
+	"info": {
+		"_postman_id": "e8541da8-3f76-4ad4-adef-7aa7020076ac",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16506229"
+	},
+	"item": [
+		{
+			"name": "/api/products/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/products/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/products/1/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/products/1/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"products",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/orders/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\": 1,\n    \"address\": \"tefgsdsst\",\n    \"purchases\": [\n        {\n            \"id\": 1,\n            \"quantity\": 1\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/orders/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"orders",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/orders/1/",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"address\": \"vefwasddsxcc\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/orders/1/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"orders",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/orders/1/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"address\": \"vefwdsxcc\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/orders/1/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"orders",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/orders/1/",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"address\": \"vefwdsxcc\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/orders/3/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"orders",
+						"3",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
