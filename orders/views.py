@@ -19,12 +19,6 @@ class OrderViewSet(ModelViewSet):
             return OrderUpdateSerializer
         return OrderRetrieveSerializer
 
-    def create(self, request, *args, **kwargs):
-        serializer = self.get_serializer(data=request.data)
-        serializer.is_valid(raise_exception=True)
-        serializer.save()
-        return Response(data=serializer.data, status=status.HTTP_201_CREATED)
-
     def update(self, request, *args, **kwargs):
         order = self.get_object()
         serializer = self.get_serializer(order, data=request.data, partial=True)
