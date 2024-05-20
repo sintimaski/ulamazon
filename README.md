@@ -1,22 +1,22 @@
 # Assumptions
 
-1. Per task, not need to use ModelViewSet for each view, Products could have 
+1. Per task, no need to use ModelViewSet for each view, Products could have 
    ReadOnlyModelViewSet, Order is fine with ModelViewSet
 
-2. Per task, assuming all auth and permissions are skipped, all relations with users 
-   are made with declared id in BODY
+2. Per task, assuming all auth and permissions could be skipped, all relations with users 
+   are made with declared ID in BODY
 
-3. Assuming that both mobile and frontend team would use same API without separation
+3. Assuming that both mobile and frontend teams would use the same API without separation
 
 4. Assuming (GET + pagination + filtering for orders) AND (POST + PUT + DELETE) will 
    be added in later stages
 
-5. For bigger application, there would be better infrastructure -- CI/CD, 
-   Pipenv/Poetry, containerization etc.
+5. For bigger applications, there would be better infrastructure -- CI/CD, 
+   Pipenv/Poetry, containerization, etc.
 
 6. Proper auth for tests
 
-7. Proper library setup - formatters, linters, security checkers etc.
+7. Proper library setup - formatters, linters, security checkers, etc.
 
 
 # Run
